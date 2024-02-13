@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(219, 51, 46);
+}
+
+#p1 {
+  position: absolute;
+  font-size: 3em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+
+  margin: 0%;
+  padding: 0%;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+   opacity: 0;
+   -webkit-text-stroke: 1px white;
+   
+  animation-name: fade;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+@keyframes fade {
+  100% {
+    opacity: 80%;
+  }
+}
+
+#p2 {
+  position: absolute;
+  font-size: 3em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  top: 45%;
+  left: 50%;
+  opacity: 100;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgb(85, 0, 0);
+  animation-name: fade2;
+  animation-duration: 6s;
+  animation-direction: reverse;
+  animation-timing-function: cubic-bezier(0.15,-0.02, 0.58, 1);
+  animation-iteration-count: 1;
+}
+@keyframes fade2 {
+  100% {opacity: 0;}
+}
+ 
+
+#spoderman{
+    position: absolute;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+#p3 {
+    position: absolute;
+    font-size: 2em;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    top: 50%;
+    left: 50%;
+    opacity: 100;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(85, 0, 0);
+    animation-name: fade3;
+    animation-duration: 7s;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0, 3.69, 1, 2.76);
+    animation-iteration-count: 1;
+  }
+  @keyframes fade3 {
+    100% {opacity: 0;}
+  }
